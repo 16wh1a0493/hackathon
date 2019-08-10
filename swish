@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+  int x,y,per;
+  scanf("%d %d",&x,&per);
+  printf("%d INR\n",x);
+  while(x>=1){
+    y=(x*per)/100;
+    x=x-y;
+    printf("%d INR\n",x);
+    if(x == 1){
+      printf("FREE!!");
+      break;
+    }
+  }
+  return 0;
+}
